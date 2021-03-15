@@ -1,0 +1,27 @@
+{
+  "name": "advanclybddtest",
+  "version": "1.0.0",
+  "description": "for ui automation ",
+  "main": "index.js",
+  "scripts": {
+    "chromebrowser": "cypress run --headless --browser chrome"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Olaprog/Advancly_BDD.git"
+  },
+  "author": "olajide",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Olaprog/Advancly_BDD/issues"
+  },
+  "homepage": "https://github.com/Olaprog/Advancly_BDD#readme",
+  "devDependencies": {
+    "cypress": "^6.6.0",
+    "cypress-cucumber-preprocessor": "^4.0.1"
+  },
+
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
+}
+}
