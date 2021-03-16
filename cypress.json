@@ -3,5 +3,6 @@
     "ignoreTestFiles": ["*.js", "*.ts", "*.md"],
     "viewportWidth": 1360,
     "viewportHeight": 790,
-    "video" : false
+    "video" : false,
+    "pageLoadTimeout" : 1000000
   }
