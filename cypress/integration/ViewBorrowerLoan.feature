@@ -3,7 +3,7 @@ Feature: View borrower all loans
 
     As a valid Aggregator I want to view all loans requested by a borrower
 
-    Scenario: As an Aggregator
+    Scenario: As an Aggregator view all borrower loans
         Given I visit the aggregator page
         Then I enter username as "paelyt@qa.team"
         And password as "P@ssword01"
