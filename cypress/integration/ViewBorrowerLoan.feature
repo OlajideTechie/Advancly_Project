@@ -1,7 +1,7 @@
 
 Feature: View borrower all loans
 
-    As a valid Aggregator I want to view all loans requested by a borrower
+    As a valid Aggregator I want to view all loans taken by a borrower
 
     Scenario: As an Aggregator view all borrower loans
         Given I visit the aggregator page

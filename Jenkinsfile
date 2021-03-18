@@ -5,13 +5,13 @@ node('master') {
 git credentialsId: '5dd122fd-1354-4152-a5a3-01328b4ecee6', url: 'https://github.com/Olaprog/Advancly_BDD.git'
     }
     
-    stage("cypress install"){
+    stage("NPM Package"){
         
-    bat label: 'Install cypress', script: 'npx cypress install' 
+    bat label: 'Install NPM', script: 'npm install' 
     
     }
     
-    stage("compile & run test"){
+    stage("Compile & Run test"){
         
         bat label: 'Run test', script: 'npm run chromebrowser' 
     }
