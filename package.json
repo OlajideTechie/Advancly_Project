@@ -4,7 +4,7 @@
   "description": "for ui automation ",
   "main": "index.js",
   "scripts": {
-    "chromebrowser": "cypress run --headless --browser chrome",
+    "chromebrowser": "cypress run --record --key 7126c1b3-b5fe-424c-bdc0-d45d1f07909b --headless --browser chrome",
     "cypress-dashboard": "cypress run --record --key 7126c1b3-b5fe-424c-bdc0-d45d1f07909b"
   },
   "repository": {
