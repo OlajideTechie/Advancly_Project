@@ -15,4 +15,10 @@ git credentialsId: '5dd122fd-1354-4152-a5a3-01328b4ecee6', url: 'https://github.
         
         bat label: 'Run test', script: 'npm run chromebrowser' 
     }
+
+    stage ('generate cucumber reports') {
+
+        bat label: 'cucumber report'
+        cucumber failedFeaturesNumber: -1, failedScenariosNumber: -1, failedStepsNumber: -1, fileIncludePattern: '**/*.json', pendingStepsNumber: -1, skippedStepsNumber: -1, sortingMethod: 'ALPHABETICAL', undefinedStepsNumber: -1
+    }
 }   
