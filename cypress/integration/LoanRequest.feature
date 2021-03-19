@@ -16,7 +16,4 @@ Feature: Successful loan request for an existing borrower
         Examples:
             | Amount | 
             |1000|
-            |2000|
-            |5000|
-           |10000|
-           |25000|
+           
