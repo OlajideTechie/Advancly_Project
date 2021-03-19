@@ -1,8 +1,15 @@
 {
-    "testFiles": "**/*.feature",
-    "ignoreTestFiles": ["*.js", "*.ts", "*.md"],
-    "viewportWidth": 1360,
-    "viewportHeight": 790,
-    "video" : false,
-    "pageLoadTimeout" : 1000000
-  }
+  "testFiles": "**/*.feature",
+  "ignoreTestFiles": [
+    "*.js",
+    "*.ts",
+    "*.md"
+  ],
+  "viewportWidth": 1360,
+  "viewportHeight": 790,
+  "video": false,
+  "pageLoadTimeout": 1000000,
+  "theme": "halloween",
+  "darkMediaQuery": false,
+  "projectId": "6b42c7"
+}
