@@ -7,7 +7,7 @@ git credentialsId: '5dd122fd-1354-4152-a5a3-01328b4ecee6', url: 'https://github.
     
     stage("NPM Package"){
         
-    bat label: 'Install NPM', script: 'npm npm install --save-dev cypress' 
+    bat label: 'Install NPM', script: 'npm install --save-dev cypress' 
     
     }
     
