@@ -24,8 +24,8 @@ class RequestLoan {
 
       static loanrequest () {
              cy.get(requestloan_Button).click()
-             cy.get('.card-body > :nth-child(2)').should('have.text', "Borrower's Name: OLADIPO OLASEMO");
-             cy.get('select[name="productId"]').select('BOI Loan')
+             cy.get('.card-body > :nth-child(2)').should('have.text', "Borrower's Name: ISRAEL OYINLOLA");
+             cy.get('select[name="productId"]').select('TestProduct')
              cy.get(':nth-child(2) > .mb-4 > .form-group > .form-control').type(1000)
              cy.get(':nth-child(3) > .mb-4 > .form-group > .form-control').type(1)
              cy.get(':nth-child(4) > .mb-4 > .form-group > .form-control').type(reference())

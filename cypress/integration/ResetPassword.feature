@@ -7,7 +7,8 @@ Feature: Password Reset for valid and invalid users
         When  I enter my email as "paelyt@qa.team"
         And I click on the submit button
         Then An otp is sent to my mail
-
+    
+    @focus
     Scenario: As an unregistered Aggregator
         Given  I visit the forgot password page
         When I enter my email as "BTara@qa.team"

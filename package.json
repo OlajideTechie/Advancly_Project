@@ -19,7 +19,7 @@
   "homepage": "https://github.com/Olaprog/Advancly_BDD#readme",
   "devDependencies": {
     "concurrently": "^6.0.0",
-    "cypress": "^6.7.1",
+    "cypress": "^6.8.0",
     "cypress-cucumber-preprocessor": "^4.0.1",
     "cypress-dark": "^1.7.14"
   },

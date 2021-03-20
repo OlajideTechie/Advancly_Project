@@ -9,5 +9,5 @@ Feature: View borrower all loans
         And password as "P@ssword01"
         And I click on Log in button
         And I wait for 7000 seconds
-        And I can search for a borrower loan with the reference "ABF407D544"
+        And I can search for a borrower loan with the reference "47CBB1D223"
         Then I can view all loans taken by a borrower
