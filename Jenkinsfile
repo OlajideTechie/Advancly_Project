@@ -15,10 +15,41 @@ git credentialsId: '5dd122fd-1354-4152-a5a3-01328b4ecee6', url: 'https://github.
         
         bat label: 'Run test', script: 'npm run chromebrowser' 
     }
-
-    stage ('generate cucumber reports') {
-
-        bat label: 'cucumber report'
-        cucumber failedFeaturesNumber: -1, failedScenariosNumber: -1, failedStepsNumber: -1, fileIncludePattern: '**/*.json', pendingStepsNumber: -1, skippedStepsNumber: -1, sortingMethod: 'ALPHABETICAL', undefinedStepsNumber: -1
+    
+      
+    stages {
+        stage('Error') {
+            when {
+                expression { doError == '1' }
+            }
+            steps {
+                echo "Failure"
+                error "failure test. It's work"
+            }
+        }
+        
+        stage('Success') {
+            when {
+                expression { doError == '0' }
+            }
+            steps {
+                echo "ok"
+            }
+        }
     }
-}   
+    post {
+       always {
+           
+                 
+                emailext body: "${currentBuild.currentResult}: Job ${env.JOB_NAME} build ${env.BUILD_NUMBER}\n More info at: ${env.BUILD_URL}",
+                recipientProviders: [[$class: 'DevelopersRecipientProvider'], [$class: 'RequesterRecipientProvider']],
+                subject: "Jenkins Build ${currentBuild.currentResult}: Job ${env.JOB_NAME}"
+            
+        }
+    }
+
+   
+    }
+
+    
+  

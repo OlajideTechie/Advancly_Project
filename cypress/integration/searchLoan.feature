@@ -9,4 +9,4 @@ Feature: search for an existing borrower loan
         And password as "P@ssword01"
         And I click on Log in button
         And I wait for 7000 seconds
-        And I can search for a borrower loan with the reference "47CBB1D223"
+        And I can search for a borrower loan with the reference "219D1AF891"

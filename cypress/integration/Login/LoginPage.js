@@ -1,4 +1,4 @@
-const baseUrl = 'https://advancly-aggregator.test.vggdev.com'
+const baseUrl = 'https://advancly-aggregator.staging.vggdev.com'
 const user_name = ':nth-child(2) > .form-group > .form-control'
 const pass_word = ':nth-child(3) > .form-group > .form-control'
 const submit_button  = '.btn'
@@ -36,7 +36,7 @@ class loginPage{
 
         cy.get('.color-light-grey')
 
-        cy.get('.page-title').should('have.text', 'Hello, Gin')
+        cy.get('.page-title').should('have.text', 'Hello, Paelyt')
     }
 
     static error_message() {

@@ -1,4 +1,4 @@
-const baseUrl = 'https://advancly-aggregator.test.vggdev.com/reset-password'
+const baseUrl = 'https://advancly-aggregator.staging.vggdev.com/reset-password'
 const Email  = '.form-control'
 const error_alert = '.alert'
 const success_alert = ('p.text-dark')

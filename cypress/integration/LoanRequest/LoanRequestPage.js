@@ -5,7 +5,6 @@ const selectProduct    = '.form-control'
 const success_alert   = '.alert'
 //const now = new Date(2021, 03, 18).getTime() //  2019-01-02 timestamp
 
-
 class RequestLoan {
 
       static borrower () {
@@ -14,7 +13,7 @@ class RequestLoan {
       }
 
       static loan () {
-          cy.wait(10000)
+        cy.wait(10000)
         cy.get('.card')
         cy.get('.card-body')
         cy.get('.AuthLayout_manipulateChildren__2aeY8')
@@ -24,7 +23,7 @@ class RequestLoan {
 
       static loanrequest () {
              cy.get(requestloan_Button).click()
-             cy.get('.card-body > :nth-child(2)').should('have.text', "Borrower's Name: ISRAEL OYINLOLA");
+             cy.get('.card-body > :nth-child(2)').should('have.text', "Borrower's Name: OLAJIDE OJO");
              cy.get('select[name="productId"]').select('TestProduct')
              cy.get(':nth-child(2) > .mb-4 > .form-group > .form-control').type(1000)
              cy.get(':nth-child(3) > .mb-4 > .form-group > .form-control').type(1)
