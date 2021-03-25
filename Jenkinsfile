@@ -16,27 +16,7 @@ git credentialsId: '5dd122fd-1354-4152-a5a3-01328b4ecee6', url: 'https://github.
         bat label: 'Run test', script: 'npm run chromebrowser' 
     }
     
-      
-    stages {
-        stage('Error') {
-            when {
-                expression { doError == '1' }
-            }
-            steps {
-                echo "Failure"
-                error "failure test. It's work"
-            }
-        }
         
-        stage('Success') {
-            when {
-                expression { doError == '0' }
-            }
-            steps {
-                echo "ok"
-            }
-        }
-    }
     post {
        always {
            
