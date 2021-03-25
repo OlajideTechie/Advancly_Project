@@ -17,13 +17,6 @@ git credentialsId: '5dd122fd-1354-4152-a5a3-01328b4ecee6', url: 'https://github.
         bat label: 'Run test', script: 'npm run chromebrowser' 
     }
     
-        
-     post {
-        always {
-            emailext body: 'Advancly Cypress BDD Test', recipientProviders: [[$class: 'DevelopersRecipientProvider'], [$class: 'RequesterRecipientProvider']], subject: 'Report'
-        }
-    }
-   
     }
 
     

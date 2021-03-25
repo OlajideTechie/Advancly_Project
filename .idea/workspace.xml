@@ -3,10 +3,25 @@
   <component name="ChangeListManager">
     <list default="true" id="c36234e3-5324-454f-a51a-6eb8e4e6b389" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cypress/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cypress/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/cypress/types/cypress.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cypress/types/cypress.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/integration/LoanBatchStatus/LoanBatchStatusPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/integration/LoanBatchStatus/LoanBatchStatusPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/integration/LoanBatchStatus/LoanBatchStatusSteps.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/integration/LoanRequest.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/integration/LoanRequest/LoanRequestPage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/integration/LoanRequest/LoanRequestSteps.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/integration/Loanbatch.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/integration/Login.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/integration/Login/LoginPage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/integration/Login/LoginSteps.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/integration/ResetPassword.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/integration/ResetPassword/ResetPasswordPage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/integration/ResetPassword/ResetPasswordSteps.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/integration/SearchLoan/SearchLoanPage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/integration/SearchLoan/SearchLoanSteps.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/integration/ViewBorrowerLoan.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/integration/ViewBorrowerLoan/ViewBorrowerLoanPage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/integration/ViewBorrowerLoan/ViewBorrowerLoanSteps.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/integration/searchLoan.feature" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +53,7 @@
       <updated>1615823105960</updated>
       <workItem from="1615823108566" duration="52000" />
       <workItem from="1615968657254" duration="5905000" />
+      <workItem from="1616648870713" duration="3247000" />
     </task>
     <servers />
   </component>
