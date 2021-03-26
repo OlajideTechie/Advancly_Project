@@ -10,12 +10,12 @@ class batchLoan {
     static loan_link() {
        
         cy.get(loans_tab).click({force:true})
-        cy.wait(6000)
+        cy.wait(9000)
         cy.get('.justify-content-between.flex-wrap')
-        cy.wait(6000)
+        cy.wait(9000)
         cy.get('.justify-content-between.flex-wrap > .flex-wrap')
         cy.get(loan_request_button).click({force:true})
-        cy.wait(5000)
+        cy.wait(6000)
         //cy.get('.card-body')
         //cy.get('.alignToggleTabItems')
         cy.get(multiple_loans_tab).click({force:true})
@@ -23,10 +23,10 @@ class batchLoan {
         cy.get(':nth-child(1) > .form-group > .form-control')
         cy.get(':nth-child(1) > .form-group > .form-control').select('Pending')
         cy.get('.card-body').contains('Pending')
-        cy.wait(2000)
+
         cy.get(':nth-child(1) > .form-group > .form-control').select('Success')
         cy.get('.card-body').contains('Success')
-        cy.wait(2000)
+
         cy.get(':nth-child(1) > .form-group > .form-control').select('Failed')
         cy.get('.card-body').contains('Failed')
         
