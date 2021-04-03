@@ -10,9 +10,9 @@ class batchLoan {
     static loan_link() {
        
         cy.get(loans_tab).click({force:true})
-        cy.wait(9000)
+        cy.wait(10000)
         cy.get('.justify-content-between.flex-wrap')
-        cy.wait(9000)
+        cy.wait(15000)
         cy.get('.justify-content-between.flex-wrap > .flex-wrap')
         cy.get(loan_request_button).click({force:true})
         cy.wait(6000)

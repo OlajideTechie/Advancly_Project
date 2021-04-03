@@ -29,7 +29,7 @@ class resetPage{
     static successMessage() {
         cy.wait(7000)
         cy.get('.ResetPassword_right__hKsGD')
-        cy.wait(10000)
+        cy.wait(15000)
         //cy.get('.mt-5').contains( 'Enter the OTP sent to your email address to verify that you\'re the owner of this account')
         cy.get(success_alert).contains( 'Enter the OTP sent to your email address to verify that you\'re the owner of this account')
     }

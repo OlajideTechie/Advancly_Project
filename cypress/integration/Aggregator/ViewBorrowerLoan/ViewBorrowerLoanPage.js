@@ -15,7 +15,7 @@ class AllLoans {
         cy.get('.bg-white > .table-responsive')
         cy.get('.BorrowerProfileCard_alignNameSection__2trUl')
         cy.wait(5000)
-        cy.get('.BorrowerProfileCard_name__2NzDU').should('have.text','OLUFEMI OLUFON')
+        cy.get('.BorrowerProfileCard_name__2NzDU').should('have.text','FEMI ADEDEJI')
        // cy.get('.font-size-1 > tr > :nth-child(2)').contains('OLADAPO OLASEMO')
         //cy.get('.font-size-1 > tr > :nth-child(2)').contains('OLADAPO OLASEMO')
     }

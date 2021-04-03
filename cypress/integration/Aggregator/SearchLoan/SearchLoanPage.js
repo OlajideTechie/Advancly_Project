@@ -1,4 +1,4 @@
-const loans = ':nth-child(2) > .Sidebar_navLink__17DoH'
+const loans = ':nth-child(2) > .Sidebar_navLink__17DoH > span'
 const search = '.search-query'
 
 
@@ -14,7 +14,7 @@ static query_search(name) {
     //cy.get('.justify-content-between.flex-wrap')
     cy.get('.justify-content-between.flex-wrap > .flex-wrap')
     cy.get(search).type((name))
-    cy.get('[style="min-width: 180px;"] > .d-flex').should('have.text','OLUFEMI OLUFON')
+    cy.get('[style="min-width: 180px;"] > .d-flex').should('have.text','FEMI ADEDEJI')
   }
 
 }

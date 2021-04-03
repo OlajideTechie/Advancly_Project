@@ -11,5 +11,6 @@
   "pageLoadTimeout": 1000000,
   "theme": "halloween",
   "darkMediaQuery": false,
-  "projectId": "6b42c7"
+  "projectId": "6b42c7",
+  "chromeWebSecurity": false
 }

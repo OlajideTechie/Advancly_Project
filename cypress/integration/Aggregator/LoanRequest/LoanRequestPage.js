@@ -20,14 +20,14 @@ class RequestLoan {
          cy.get(selectBorrower).click()
 
       }
-
+ 
       static loanrequest () {
              cy.get(requestloan_Button).click()
-             cy.get('.card-body > :nth-child(2)').should('have.text', "Borrower's Name: OLAJIDE OJO");
+      cy.get('.card-body > :nth-child(2)').should('have.text', "Borrower's Name: OLUWATOSIN BAKARE");
              cy.get('select[name="productId"]').select('TestProduct')
-             cy.get(':nth-child(2) > .mb-4 > .form-group > .form-control').type(1000)
-             cy.get(':nth-child(3) > .mb-4 > .form-group > .form-control').type(1)
-             cy.get(':nth-child(4) > .mb-4 > .form-group > .form-control').type(reference())
+             cy.get(':nth-child(2) > .mb-4 > .input-group > .form-control').type(1000)
+             cy.get(':nth-child(3) > .mb-4 > .input-group > .form-control').type(1)
+             cy.get(':nth-child(4) > .mb-4 > .input-group > .form-control').type(reference())
 
              function reference() {
                 var text = "";
@@ -40,8 +40,8 @@ class RequestLoan {
               }
 
               cy.get('select[name="borrowerSector"]').select('financial services')
-              cy.get(':nth-child(6) > .mb-4 > .form-group > .form-control').type('2021-03-31')
-               cy.get(':nth-child(7) > .mb-4 > .form-group > .form-control').type(84)
+              cy.get(':nth-child(6) > .mb-4 > .input-group > .form-control').type('2021-12-31')
+               cy.get(':nth-child(7) > .mb-4 > .input-group > .form-control').type(84)
                cy.get('.btn').click()
               //cy.get(':nth-child(6) > .mb-4 > .form-group > .form-control').click()
 

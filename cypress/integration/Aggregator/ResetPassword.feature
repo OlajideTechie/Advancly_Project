@@ -1,7 +1,8 @@
 Feature: Password Reset for valid and invalid users
 
     As a valid Aggregator I can do a forgot password
-
+    
+    @focus
     Scenario: As a registered Aggregator
         Given  I visit the forgot password page
         When  I enter my email as "paelyt@qa.team"

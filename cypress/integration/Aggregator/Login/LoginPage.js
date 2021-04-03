@@ -1,6 +1,6 @@
 const baseUrl = 'https://advancly-aggregator.staging.vggdev.com'
-const user_name = ':nth-child(2) > .form-group > .form-control'
-const pass_word = ':nth-child(3) > .form-group > .form-control'
+const user_name = ':nth-child(2) > .input-group > .form-control'
+const pass_word = ':nth-child(3) > .input-group > .form-control'
 const submit_button  = '.btn'
 const verify_user   = '.page-title'
 const Error_message  = '.alert'
