@@ -12,5 +12,7 @@
   "theme": "halloween",
   "darkMediaQuery": false,
   "projectId": "6b42c7",
-  "chromeWebSecurity": false
+  "chromeWebSecurity": false,
+    "retries": 3
+  
 }
