@@ -42,8 +42,9 @@ cy.get('.Hamburger > .adv-icon').click()
 cy.get('#manage-loans > a')
 cy.get('#manage-loans > a > :nth-child(2)').click()
 cy.wait(5000)
-cy.get('[data-test=table]')
-cy.get('[data-test=table-body] > :nth-child(1) > :nth-child(2)').contains('Paelyt')
+//cy.get('[data-test=table]')
+//cy.get('[data-test=table-body] > :nth-child(1) > :nth-child(2)').contains('Paelyt')
+cy.get('#activeEcosystem').contains('Paelyt')
 
  }
 
