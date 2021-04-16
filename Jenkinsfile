@@ -18,19 +18,12 @@ git credentialsId: '5dd122fd-1354-4152-a5a3-01328b4ecee6', url: 'https://github.
     }
 
     stage("Send Email") {
-            def mailRecipients = "olajide.interview@gmail.com"
-            def jobName = currentBuild.fullDisplayName
-            emailext body: '''${SCRIPT, template="groovy-html.template"}''',
-            mimeType: 'text/html',
-            subject: "[Jenkins] ${jobName}",
-            to: "${mailRecipients}",
-            replyTo: "${mailRecipients}",
-            recipientProviders: [[$class: 'CulpritsRecipientProvider']]
+           
 
         emailext attachmentsPattern: 'generatedFile.txt',
-     body: "${currentBuild.currentResult}: Job ${env.JOB_NAME} build ${env.BUILD_NUMBER}\n More info at: ${env.BUILD_URL}",
-     recipientProviders: [developers(), requestor()],
-     subject: "Jenkins Build ${currentBuild.currentResult}: Job ${env.JOB_NAME}"
+        body: "${currentBuild.currentResult}: Job ${env.JOB_NAME} build ${env.BUILD_NUMBER}\n More info at: ${env.BUILD_URL}",
+        recipientProviders: [developers(), requestor()],
+        subject: "Jenkins Build ${currentBuild.currentResult}: Job ${env.JOB_NAME}"
         }
     
     }
