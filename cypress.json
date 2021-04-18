@@ -13,6 +13,14 @@
   "darkMediaQuery": false,
   "projectId": "6b42c7",
   "chromeWebSecurity": false,
-    "retries": 0
-  
+    "retries": 0,
+
+"reporter": "../node_modules/mochawesome/src/mochawesome.js",
+"reporterOptions" : {
+  "overwrite" : false,
+  "html" : false,
+  "json" : true
+
+  }
+
 }

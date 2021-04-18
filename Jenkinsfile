@@ -8,7 +8,7 @@ git credentialsId: '5dd122fd-1354-4152-a5a3-01328b4ecee6', url: 'https://github.
     
     stage("NPM Package"){
         
-    bat label: 'Install NPM', script: 'npm install --save-dev cypress' 
+    bat label: 'Install NPM', script: 'npm install' 
     
     }
     
@@ -17,9 +17,17 @@ git credentialsId: '5dd122fd-1354-4152-a5a3-01328b4ecee6', url: 'https://github.
         bat label: 'Run test', script: 'npm run chromebrowser' 
     }
 
-    stage("Send Email") {
+    stage("Generate Test Report") {
+      
+        script: 'npm run clean:reports' 
+         script: 'npm run merge:reports' 
+          script: 'npm run create:html:report' 
 
-     emailext attachmentsPattern: 'generatedFile.txt',
+    }
+
+    stage("Send Email Attachment") {
+     
+     emailext attachmentsPattern: '**/cypress-tests-report.html',
      body: "${currentBuild.currentResult}: Job ${env.JOB_NAME} build ${env.BUILD_NUMBER}\n More info at: ${env.BUILD_URL}",
      recipientProviders: [developers(), requestor()],
      subject: "Jenkins Build ${currentBuild.currentResult}: Job ${env.JOB_NAME}"
