@@ -8,19 +8,19 @@ git credentialsId: '5dd122fd-1354-4152-a5a3-01328b4ecee6', url: 'https://github.
     
     stage("NPM Package"){
         
-    bat label: 'Install NPM', script: 'npm install' 
+    bat label: 'Install NPM', script: 'npm install --save-dev cypress' 
     
     }
     
     stage("Compile & Run test"){
-          
-         script: 'npm run chromebrowser' 
+        
+        bat label: 'Run test', script: 'npm run chromebrowser' 
     }
 
     stage("Generate Test Report") {
       
          script: 'npm run merge:reports' 
-         script: 'npm run create:html:report' 
+          script: 'npm run create:html:report' 
 
     }
 
