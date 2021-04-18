@@ -13,15 +13,14 @@ git credentialsId: '5dd122fd-1354-4152-a5a3-01328b4ecee6', url: 'https://github.
     }
     
     stage("Compile & Run test"){
-        
-        bat label: 'Run test', script: 'npm run chromebrowser' 
+         script: 'npm run clean:reports' 
+         script: 'npm run chromebrowser' 
     }
 
     stage("Generate Test Report") {
       
-        script: 'npm run clean:reports' 
          script: 'npm run merge:reports' 
-          script: 'npm run create:html:report' 
+         script: 'npm run create:html:report' 
 
     }
 
