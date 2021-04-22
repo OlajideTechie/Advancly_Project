@@ -30,7 +30,7 @@ git credentialsId: '5dd122fd-1354-4152-a5a3-01328b4ecee6', url: 'https://github.
      mimeType: 'text/html',
      body: "${env.BUILD_URL} has result ${currentBuild.result}\n More info at: ${env.BUILD_URL}",
      recipientProviders: [developers(), requestor()],
-     subject: ""Status of pipeline: ${currentBuild.fullDisplayName}"
+     subject: "Status of pipeline: ${currentBuild.fullDisplayName}"
     
     }
 
