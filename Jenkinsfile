@@ -14,6 +14,7 @@ git credentialsId: '5dd122fd-1354-4152-a5a3-01328b4ecee6', url: 'https://github.
     
     stage("Compile & Run test"){
         
+        
         bat label: 'Run test', script: 'npm run chromebrowser' 
     }
 
@@ -27,6 +28,7 @@ git credentialsId: '5dd122fd-1354-4152-a5a3-01328b4ecee6', url: 'https://github.
     stage("Send Email Attachment") {
      
      emailext attachmentsPattern: '**/cypress-tests-report.html',
+     mimeType: 'text/html',
      body: "${currentBuild.currentResult}: Job ${env.JOB_NAME} build ${env.BUILD_NUMBER}\n More info at: ${env.BUILD_URL}",
      recipientProviders: [developers(), requestor()],
      subject: "Jenkins Build ${currentBuild.currentResult}: Job ${env.JOB_NAME}"
