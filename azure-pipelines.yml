@@ -1,0 +1,11 @@
+
+trigger:
+- master
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- script: npm run chromebrowser 
+  displayName: 'Run cypress test'
+
